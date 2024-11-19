@@ -1,0 +1,83 @@
+#parent{
+  display:flex;
+  flex-wrap: wrap;
+  
+}
+.Title{
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color:aliceblue;
+  font-size:4rem;
+  text-align: center;
+}
+
+.child{
+  width:min-content;
+  flex-direction: row;
+  background-color:aliceblue;
+  margin:20px 20px;
+  border-radius:18px;
+  padding:1rem;
+  align-items: center;
+  
+
+}
+.child:hover {
+  transform: scale(1.20); /* Hover effect for a subtle zoom */
+}
+.text{
+  flex-direction: column;
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align:center;
+  
+}
+.image{
+  flex-direction: column;
+  width:25rem;
+  border-radius:15px;
+  
+}
+.Form{
+  background-color: aliceblue;
+  border-radius:15px;
+  display: flex;
+    flex-direction: column; /* Arrange inputs vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    gap: 10px; /* Add some spacing between elements */
+    margin: auto; /* Center horizontally in its container */
+    height: 10vh; /* Make the form container full-screen height */
+    text-align: center; /* Center text inside the form */
+}
+.UploadImage{
+  flex-direction: row;
+  align-content: center;
+}
+body{
+  background:#BFECFF;
+  cursor:none;
+}
+.custom-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color:#CDC1FF;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: cursorAnim 0.3s ease-out;
+}
+
+@keyframes cursorAnim {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.5);
+  }
+}
